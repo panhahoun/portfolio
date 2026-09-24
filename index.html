@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Houn Panha — Flutter Developer. Portfolio of mobile and full-stack projects.">
+<title>Houn Panha — Flutter Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Kantumruy+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header id="header">
+  <a href="#home" class="logo">Panha<span>.</span></a>
+  <nav>
+    <a href="#home" class="active" data-i18n="nav.home">Home</a>
+    <a href="#about" data-i18n="nav.about">About</a>
+    <a href="#skills" data-i18n="nav.skills">Skills</a>
+    <a href="#projects" data-i18n="nav.projects">Projects</a>
+    <a href="#education" data-i18n="nav.education">Education</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+  </nav>
+  <div class="actions">
+    <button id="langToggle" class="icon-btn lang-btn" title="ខ្មែរ / English" aria-label="Switch language">KH</button>
+    <button id="themeToggle" class="icon-btn" title="Toggle dark / light mode" aria-label="Toggle dark and light mode"><i class="fa-solid fa-sun"></i></button>
+    <button id="menuToggle" class="icon-btn hamburger" title="Menu" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</header>
+
+<!-- Home -->
+<section class="home" id="home">
+  <div class="home-content">
+    <div class="eyebrow" data-i18n="hero.eyebrow">Full-Stack Flutter Developer</div>
+    <h1><span data-i18n="hero.hello">Hello, I'm</span> <span class="name" data-i18n="hero.name">Panha</span></h1>
+    <h3 class="typing-text"><span data-i18n="hero.typePrefix">I'm a</span> <span id="typing"></span><span class="cursor"></span></h3>
+    <p data-i18n="hero.intro">Passionate Flutter developer and recent graduate building bilingual, user-friendly mobile apps — with backend experience in FastAPI to ship features end-to-end.</p>
+    <div class="social-icons">
+      <a href="https://github.com/panhahoun" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/houn-panha-2ab2ab325" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="mailto:hournpanha168@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    <div class="hero-actions">
+      <a href="#projects" class="btn" data-i18n="hero.btnWork">View My Work</a>
+      <a href="#contact" class="btn btn-ghost" data-i18n="hero.btnContact">Contact Me</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="num">7+</div><div class="label" data-i18n="stat.projects">Projects Built</div></div>
+      <div class="hero-stat"><div class="num">2</div><div class="label" data-i18n="stat.fullstack">Full-Stack Builds</div></div>
+      <div class="hero-stat"><div class="num">100%</div><div class="label" data-i18n="stat.scholarship">Scholarships</div></div>
+    </div>
+  </div>
+  <div class="home-img">
+    <div class="ring"></div>
+    <img src="DSC_9317%20copy.JPG" alt="Houn Panha" data-i18n-alt="hero.alt">
+  </div>
+</section>
+
+<!-- About -->
+<section class="section" id="about">
+  <div class="section-label reveal" data-i18n="nav.about">About</div>
+  <h2 class="section-title reveal" data-i18n="about.title">Who I Am</h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <p class="reveal" data-i18n="about.p1">I'm a Flutter developer from Phnom Penh, Cambodia, who just completed a Bachelor's in Informatics Economics at the Royal University of Law and Economics (2026) and the Mobile Application Development with Flutter program at ANT Training Center / MPTC / CBRD.</p>
+      <p class="reveal" data-i18n="about.p2">For my thesis I built <strong>KOMNIT</strong>, a complete bilingual (English/Khmer) library mobile app. At ANT I worked on <strong>NextGen-Scholars</strong>, a full-stack scholarship platform, where I owned the FastAPI/MongoDB backend and the Flutter web admin panel. I also self-learned the full stack — every feature you see here I designed, built, and integrated myself.</p>
+      <p class="reveal" data-i18n="about.p3">I care about clean UI, localization, and secure authentication — shipping features that actually work end-to-end.</p>
+    </div>
+    <div class="about-cards">
+      <div class="info-card reveal">
+        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+        <div>
+          <div class="label" data-i18n="info.location">Location</div>
+          <div class="value" data-i18n="info.locationVal">Phnom Penh, Cambodia</div>
+        </div>
+      </div>
+      <div class="info-card reveal">
+        <div class="icon"><i class="fa-solid fa-code"></i></div>
+        <div>
+          <div class="label" data-i18n="info.focus">Focus</div>
+          <div class="value" data-i18n="info.focusVal">Flutter · FastAPI · Full-Stack</div>
+        </div>
+      </div>
+      <div class="info-card reveal">
+        <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div>
+          <div class="label" data-i18n="info.education">Education</div>
+          <div class="value" data-i18n="info.educationVal">RULE (2026) · ANT Flutter Program</div>
+        </div>
+      </div>
+      <div class="info-card reveal">
+        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+        <div>
+          <div class="label" data-i18n="info.email">Email</div>
+          <div class="value">hournpanha168@gmail.com</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section class="section" id="skills">
+  <div class="section-label reveal" data-i18n="nav.skills">Skills</div>
+  <h2 class="section-title reveal" data-i18n="skills.title">My Toolkit</h2>
+  <div class="skills-wrap">
+    <div class="skill-group reveal">
+      <h3 data-i18n="skills.g1">Frameworks &amp; Libraries</h3>
+      <div class="chips">
+        <span class="chip"><strong>Flutter</strong></span>
+        <span class="chip">GetX</span>
+        <span class="chip">Dio</span>
+        <span class="chip">Firebase FCM</span>
+        <span class="chip">WebSocket</span>
+        <span class="chip">Geolocator</span>
+        <span class="chip">FastAPI</span>
+        <span class="chip">SQLAlchemy</span>
+        <span class="chip">Pydantic</span>
+      </div>
+    </div>
+    <div class="skill-group reveal">
+      <h3 data-i18n="skills.g2">Programming</h3>
+      <div class="chips">
+        <span class="chip"><strong>Dart</strong></span>
+        <span class="chip"><strong>Python</strong></span>
+        <span class="chip">JavaScript</span>
+        <span class="chip off">HTML · CSS · PHP</span>
+        <span class="chip off">C# · C++ · Java · SQL</span>
+      </div>
+    </div>
+    <div class="skill-group reveal">
+      <h3 data-i18n="skills.g3">Data &amp; APIs</h3>
+      <div class="chips">
+        <span class="chip"><strong>MongoDB</strong></span>
+        <span class="chip">SQLite</span>
+        <span class="chip">REST API</span>
+        <span class="chip">JWT / OTP Auth</span>
+        <span class="chip">Social Login</span>
+        <span class="chip">Gemini AI</span>
+        <span class="chip">Cloudinary</span>
+      </div>
+    </div>
+    <div class="skill-group reveal">
+      <h3 data-i18n="skills.g4">Tools</h3>
+      <div class="chips">
+        <span class="chip"><strong>Git</strong> / <strong>GitHub</strong></span>
+        <span class="chip">Postman</span>
+        <span class="chip">Docker</span>
+        <span class="chip">VPS</span>
+        <span class="chip">Firebase Console</span>
+        <span class="chip">Android Studio</span>
+        <span class="chip">VS Code</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section class="section" id="projects">
+  <div class="section-label reveal" data-i18n="nav.projects">Projects</div>
+  <h2 class="section-title reveal" data-i18n="projects.title">Things I've Built</h2>
+  <div class="projects-grid">
+
+    <div class="project-card reveal">
+      <div class="project-top">
+        <div>
+          <div class="project-title" data-i18n="p1.name">KOMNIT — Library Management App</div>
+          <div class="project-tagline" data-i18n="p1.tagline">Thesis project · Flutter mobile app</div>
+        </div>
+        <span class="role-badge" data-i18n="p1.role">My role: entire Flutter app</span>
+      </div>
+      <ul class="project-body">
+        <li data-i18n="p1.b1">Full bilingual app (English + Khmer): login lockout, forced password change, avatar upload, email change with verification code</li>
+        <li data-i18n="p1.b2">Book catalog with search &amp; rich filters, room reservations with conflict logic, GPS-based library entry/exit, Firebase + Telegram push</li>
+        <li data-i18n="p1.b3">GetX architecture (Binding → Controller → View), Dio JWT interceptor, centralized session handling — linter-clean, 13 tests passing</li>
+      </ul>
+      <div class="project-tags">
+        <span class="tag">Flutter</span><span class="tag">GetX</span><span class="tag">Dio</span><span class="tag">Firebase FCM</span><span class="tag">Geolocator</span><span class="tag">i18n</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/panhahoun" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-top">
+        <div>
+          <div class="project-title" data-i18n="p2.name">NextGen-Scholars — Scholarship Platform</div>
+          <div class="project-tagline" data-i18n="p2.tagline">ANT team project · Full-stack</div>
+        </div>
+        <span class="role-badge" data-i18n="p2.role">My role: Backend + Admin + API integration</span>
+      </div>
+      <ul class="project-body">
+        <li data-i18n="p2.b1">Backend (FastAPI + MongoDB): JWT/OTP/social auth, 80+ endpoints, application status state machine, Gemini AI chat + scholarship matching, WebSocket + FCM push, deployed to a VPS with a custom domain</li>
+        <li data-i18n="p2.b2">Admin (Flutter web): dashboard KPIs, analytics charts, application lifecycle management, CSV exports, AI assistant</li>
+        <li data-i18n="p2.b3">Integrated the Flutter mobile app and its offline SQLite cache with the API</li>
+      </ul>
+      <div class="project-tags">
+        <span class="tag">FastAPI</span><span class="tag">MongoDB</span><span class="tag">JWT</span><span class="tag">OTP</span><span class="tag">WebSocket</span><span class="tag">Gemini AI</span><span class="tag">Flutter Web</span><span class="tag">VPS</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/panhahoun" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-top">
+        <div>
+          <div class="project-title" data-i18n="p3.name">LMS Full-Stack Prototype</div>
+          <div class="project-tagline" data-i18n="p3.tagline">Self-built · Flutter + FastAPI + Admin</div>
+        </div>
+        <span class="role-badge" data-i18n="p3.role">Solo</span>
+      </div>
+      <ul class="project-body">
+        <li data-i18n="p3.b1">Flutter member app: dashboard, filtered catalog, room booking, push notifications, EN/Khmer, dark mode</li>
+        <li data-i18n="p3.b2">FastAPI backend: JWT + bcrypt auth, borrow with fines, reservation approval, stats &amp; reports</li>
+        <li data-i18n="p3.b3">Single-file admin dashboard (Chart.js) + guest visitor portal</li>
+      </ul>
+      <div class="project-tags">
+        <span class="tag">Flutter</span><span class="tag">FastAPI</span><span class="tag">SQLite</span><span class="tag">JWT</span><span class="tag">Chart.js</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/panhahoun" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-top">
+        <div>
+          <div class="project-title" data-i18n="p4.name">Bank Account Management</div>
+          <div class="project-tagline" data-i18n="p4.tagline">Individual exam · C# WinForms desktop app</div>
+        </div>
+        <span class="role-badge" data-i18n="p4.role">Solo</span>
+      </div>
+      <ul class="project-body">
+        <li data-i18n="p4.b1">Two-tab desktop app to create and search customer bank accounts</li>
+        <li data-i18n="p4.b2">OOP design: abstract Account base, inheritance &amp; polymorphism (2.5% / 5.5% interest)</li>
+        <li data-i18n="p4.b3">LINQ searches, DataGridView, and serialized persistence</li>
+      </ul>
+      <div class="project-tags">
+        <span class="tag">C#</span><span class="tag">WinForms</span><span class="tag">OOP</span><span class="tag">LINQ</span><span class="tag">.NET 4.8</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/panhahoun" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-top">
+        <div>
+          <div class="project-title" data-i18n="p5.name">Personal Portfolio Website</div>
+          <div class="project-tagline" data-i18n="p5.tagline">Web · HTML / CSS / JS</div>
+        </div>
+        <span class="role-badge" data-i18n="p5.role">Solo</span>
+      </div>
+      <ul class="project-body">
+        <li data-i18n="p5.b1">Responsive portfolio in vanilla HTML, CSS &amp; JS — no frameworks</li>
+        <li data-i18n="p5.b2">Bilingual (EN/Khmer) toggle and dark/light theme</li>
+      </ul>
+      <div class="project-tags">
+        <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">i18n</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/panhahoun" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-top">
+        <div>
+          <div class="project-title" data-i18n="p6.name">Programming Basics (self-learn)</div>
+          <div class="project-tagline" data-i18n="p6.tagline">Self-learned · Multiple languages</div>
+        </div>
+        <span class="role-badge" data-i18n="p6.role">Self-learn</span>
+      </div>
+      <ul class="project-body">
+        <li data-i18n="p6.b1">Java OOP exercises &amp; calculator; Python CLI games (Bagels, Blackjack, Birthday Paradox)</li>
+        <li data-i18n="p6.b2">C# ASP.NET Core Razor intro; JavaScript storefront &amp; task-list demos</li>
+      </ul>
+      <div class="project-tags">
+        <span class="tag">Java</span><span class="tag">Python</span><span class="tag">C#</span><span class="tag">JavaScript</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/panhahoun" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-top">
+        <div>
+          <div class="project-title" data-i18n="p7.name">Jewelry Shop Management System</div>
+          <div class="project-tagline" data-i18n="p7.tagline">Group project · C++ console app</div>
+        </div>
+        <span class="role-badge" data-i18n="p7.role">My role: 1 of 4 members</span>
+      </div>
+      <ul class="project-body">
+        <li data-i18n="p7.b1">Role-based CRUD for products, staff &amp; customers; user cart with checkout &amp; receipts</li>
+        <li data-i18n="p7.b2">Binary file storage, OOP classes, custom arrow-key/mouse menu UI</li>
+      </ul>
+      <div class="project-tags">
+        <span class="tag">C++</span><span class="tag">OOP</span><span class="tag">Binary Storage</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/panhahoun" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Education -->
+<section class="section" id="education">
+  <div class="section-label reveal" data-i18n="nav.education">Education</div>
+  <h2 class="section-title reveal" data-i18n="edu.title">Where I Studied</h2>
+  <div class="edu-grid">
+    <div class="edu-card reveal">
+      <div>
+        <h3 data-i18n="edu.deg">Bachelor of Informatics Economics</h3>
+        <div class="school" data-i18n="edu.univ">Royal University of Law and Economics (RULE)</div>
+      </div>
+      <span class="date" data-i18n="edu.date1">2022 – 2026</span>
+    </div>
+    <div class="edu-card reveal">
+      <div>
+        <h3 data-i18n="edu.prog">Mobile Application Development with Flutter</h3>
+        <div class="school" data-i18n="edu.cent">ANT Training Center / MPTC / CBRD</div>
+      </div>
+      <span class="date" data-i18n="edu.date2">Jun 2025 – Jul 2026</span>
+    </div>
+  </div>
+  <div class="edu-note reveal">
+    <span class="tag" data-i18n="edu.t1">MOEYS 100% Scholarship</span>
+    <span class="tag" data-i18n="edu.t2">100% MAD Flutter Scholarship</span>
+    <span class="tag" data-i18n="edu.t3">Flutter Certificate — ANT, 2026</span>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section contact" id="contact">
+  <div class="contact-inner">
+    <div class="section-label reveal" data-i18n="nav.contact" style="color:#bae0ff; justify-content:center;">Contact</div>
+    <h2 class="section-title reveal" data-i18n="contact.title" style="text-align:center;">Let's Build Something Together</h2>
+    <p class="section-desc reveal" data-i18n="contact.desc">I'm looking for a Flutter developer role in Cambodia. If you have a project, an opportunity, or just want to say hi — reach out.</p>
+    <div class="contact-links reveal">
+      <a href="mailto:hournpanha168@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        hournpanha168@gmail.com
+      </a>
+      <a href="https://github.com/panhahoun" target="_blank">
+        <i class="fa-brands fa-github"></i>
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/houn-panha-2ab2ab325" target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p data-i18n="footer.text">© 2026 Houn Panha · Built with HTML, CSS &amp; JS · Flutter Developer</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
